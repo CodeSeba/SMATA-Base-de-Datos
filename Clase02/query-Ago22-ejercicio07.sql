@@ -1,5 +1,5 @@
 
---	Usando la base 'negocio' de la primera clase (20170815)
+--  Usando la base 'negocio' de la primera clase (20170815)
 --  1. Todos los campos de la tabla producto.
 --  2. Articulos y precios de los articulos cuyo talle sea M.
 --  3. Precio promedio de los articulos.
