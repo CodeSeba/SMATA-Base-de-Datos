@@ -1,27 +1,30 @@
-CREATE DATABASE Personas;
+CREATE DATABASE personas;
 
-USE Personas;
+USE personas;
 
-CREATE TABLE Alumnos
+CREATE TABLE alumnos
 (
-    DNI int NOT null PRIMARY KEY,
+    DNI int NOT null,
     Nombre varchar(30),
     Apellido varchar(30),
     Edad int,
     Sexo char(1),
-    Ciudad int
+    Ciudad varchar(30),
+    PRIMARY KEY (DNI)
 );
 
-INSERT INTO Alumnos VALUES
-	(12345678, 'Juan', 'Perez', 18, 'M',1 ),
-	(23456789, 'Pedro', 'Picapiedra', 19, 'M',1 ),
-	(34567890, 'Maria', 'Garcia', 20, 'F', 2 ),
-	(45678901, 'Carlos', 'Rios', 20, 'M', 2 ),
-	(56789012, 'Mariana', 'De Melo', 22, 'F', 3 ),
-	(67890123, 'Lionel', 'Messi', 23, 'M', 3 ),
-	(78901234, 'Liliana', 'Maza', 30, 'F', 4 ),
-	(89012345, 'Sofia', 'Vazco', 28, 'F', 4 ),
-	(90123456, 'Fabian', 'Dominguez', 18, 'M', 5 ),
-	(11234567, 'Estela', 'Zafari', 25, 'F', 5 );
+INSERT INTO alumnos VALUES
+	(11234567, 'Estela', 'Zafari', 25, 'F', 'CABA'),
+	(11345678, 'Pablo', 'Cortes', 43, 'M', 'Cordoba'),
+	(11456789, 'Laura', 'Salvaje', 31, 'F', 'Rosario'),
+	(12345678, 'Juan', 'Perez', 18, 'M', 'Cordoba'),
+	(23456789, 'Pedro', 'Picapiedra', 19, 'M', 'Rosario'),
+	(34567890, 'Maria', 'Garcia', 20, 'F', 'CABA'),
+	(45678901, 'Carlos', 'Rios', 20, 'M', 'Cordoba'),
+	(56789012, 'Mariana', 'De Melo', 22, 'F', 'Rosario'),
+	(67890123, 'Lionel', 'Messi', 23, 'M', 'CABA'),
+	(78901234, 'Liliana', 'Maza', 30, 'F', 'Cordoba'),
+	(89012345, 'Sofia', 'Vazco', 28, 'F', 'Rosario'),
+	(90123456, 'Fabian', 'Dominguez', 18, 'M', 'CABA');
 
-SELECT * FROM Alumnos;
+SELECT * FROM alumnos;
