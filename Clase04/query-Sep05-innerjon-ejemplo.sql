@@ -7,4 +7,4 @@ USE empleados;
 SELECT *
 	FROM empleado
 	INNER JOIN seccion
-		ON empleado.seccion = seccion.codseccion;
+	ON empleado.seccion = seccion.codseccion;
