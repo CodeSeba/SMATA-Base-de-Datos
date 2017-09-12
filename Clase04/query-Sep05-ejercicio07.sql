@@ -4,11 +4,12 @@
 
 USE centroz;
 
-SELECT DISTINCT cursos.nombre as Curso, 
+SELECT cursos.nombre as Curso, 
 	(SELECT COUNT(*) FROM alumnos WHERE curso = 5 AND nacionalidad > 1)
 	/
 	(SELECT COUNT(*) FROM alumnos WHERE curso = 5)
 	* 100
 	AS ProcentajeExtranjeros
 	FROM alumnos INNER JOIN cursos ON alumnos.curso = cursos.codcurso
-	WHERE curso = 5;
+	WHERE curso = 5
+	GROUP BY Curso;
