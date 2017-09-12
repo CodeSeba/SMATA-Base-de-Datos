@@ -3,7 +3,7 @@
 USE centroz;
 
 ALTER TABLE alumnos
-	ADD nacionalidad int;
+	ADD nacionalidad int DEFAULT 1;
 
 UPDATE INTO alumnos(nacionalidad) VALUES
 	(1),
