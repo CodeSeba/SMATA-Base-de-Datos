@@ -9,7 +9,8 @@ SELECT cursos.nombre as Curso,
 	/
 	(SELECT COUNT(*) FROM alumnos WHERE curso = 5)
 	* 100
-	AS ProcentajeExtranjeros
-	FROM alumnos INNER JOIN cursos ON alumnos.curso = cursos.codcurso
+	AS "Porcentaje de extranjeros"
+	FROM alumnos INNER JOIN cursos
+	ON alumnos.curso = cursos.codcurso
 	WHERE curso = 5
 	GROUP BY Curso;

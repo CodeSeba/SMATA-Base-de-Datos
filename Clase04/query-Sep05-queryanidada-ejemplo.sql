@@ -4,4 +4,4 @@
 USE empleados;
 
 SELECT * FROM seccion
-WHERE presupuesto > (SELECT AVG(presupuesto) FROM seccion);
+	WHERE presupuesto > (SELECT AVG(presupuesto) FROM seccion);

@@ -6,10 +6,10 @@ USE empleados;
 INSERT INTO seccion
 VALUES (null,'Calidad',2864.57);
 
-INSERT INTO empleado
-VALUES (
-	22345678,
-	'Juan',
-	'Perez',
-	(SELECT codseccion FROM seccion wHERE nombre = 'Calidad')
+INSERT INTO empleado VALUES
+	(
+		22345678,
+		'Juan',
+		'Perez',
+		(SELECT codseccion FROM seccion wHERE nombre = 'Calidad')
 	);

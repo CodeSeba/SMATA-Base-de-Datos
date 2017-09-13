@@ -5,6 +5,5 @@
 USE empleados;
 
 SELECT *
-	FROM empleado
-	INNER JOIN seccion
+	FROM empleado INNER JOIN seccion
 	ON empleado.seccion = seccion.codseccion;

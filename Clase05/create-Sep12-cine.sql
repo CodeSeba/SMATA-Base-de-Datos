@@ -14,7 +14,7 @@ CREATE TABLE peliculas
 	(
 		codigo int AUTO_INCREMENT,
 		nombre varchar(100),
-		calificacion int, -- Calificaicon por Edad
+		calificacion int,			-- Calificaicon por Edad
 		PRIMARY KEY (codigo)
 	);
 

@@ -4,6 +4,5 @@
 USE empleados;
 
 SELECT empleado.nombre,apellido,seccion.nombre AS seccion,presupuesto
-	FROM empleado
-	INNER JOIN seccion
+	FROM empleado INNER JOIN seccion
 	ON empleado.seccion = seccion.codseccion
