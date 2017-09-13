@@ -1,4 +1,8 @@
--- Porcentaje de extranjeros en Redes.
+-- Agregar a Alumnos el campo Nacionalidad.
+
+-- Agrego nacionalidad como codigo entero y
+-- defino 1 como nacional y mayor a 1 como
+-- extranjero.
 
 USE centroz;
 
@@ -7,102 +11,86 @@ ALTER TABLE alumnos
 
 UPDATE alumnos
 	SET nacionalidad = 4
-	WHERE nombre = 'Delaney';
+	WHERE codalumno = 2;
 
 UPDATE alumnos
 	SET nacionalidad = 5
-	WHERE nombre = 'Darnall';
+	WHERE codalumno = 3;
 
 UPDATE alumnos
 	SET nacionalidad = 3
-	WHERE nombre = 'Meridith';
+	WHERE codalumno = 5;
 
 UPDATE alumnos
 	SET nacionalidad = 5
-	WHERE nombre = 'Emmye';
+	WHERE codalumno = 6;
 
 UPDATE alumnos
 	SET nacionalidad = 3
-	WHERE nombre = 'Idaline';
+	WHERE codalumno = 7;
 
 UPDATE alumnos
 	SET nacionalidad = 3
-	WHERE nombre = 'Fran';
+	WHERE codalumno = 9;
 
 UPDATE alumnos
 	SET nacionalidad = 2
-	WHERE nombre = 'Rae';
+	WHERE codalumno = 10;
 
 UPDATE alumnos
 	SET nacionalidad = 2
-	WHERE nombre = 'Querida';
-
-UPDATE alumnos
-	SET nacionalidad = 5
-	WHERE nombre = 'Harris';
+	WHERE codalumno = 11;
 
 UPDATE alumnos
 	SET nacionalidad = 4
-	WHERE nombre = 'Nita';
+	WHERE codalumno = 12;
 
 UPDATE alumnos
 	SET nacionalidad = 2
-	WHERE nombre = 'Eldredge';
+	WHERE codalumno = 14;
 
 UPDATE alumnos
 	SET nacionalidad = 2
-	WHERE nombre = 'Gigi';
+	WHERE codalumno = 15;
 
 UPDATE alumnos
 	SET nacionalidad = 3
-	WHERE nombre = 'Simonelli';
+	WHERE codalumno = 17;
 
 UPDATE alumnos
 	SET nacionalidad = 5
-	WHERE nombre = 'Bettam';
+	WHERE codalumno = 18;
 
 UPDATE alumnos
 	SET nacionalidad = 3
-	WHERE nombre = 'Nanny';
+	WHERE codalumno = 20;
 
 UPDATE alumnos
 	SET nacionalidad = 5
-	WHERE nombre = 'Mead';
+	WHERE codalumno = 21;
 
 UPDATE alumnos
 	SET nacionalidad = 4
-	WHERE nombre = 'Kean';
+	WHERE codalumno = 23;
 
 UPDATE alumnos
 	SET nacionalidad = 2
-	WHERE nombre = 'Christi';
-
-UPDATE alumnos
-	SET nacionalidad = 2
-	WHERE nombre = 'Leonore';
+	WHERE codalumno = 26;
 
 UPDATE alumnos
 	SET nacionalidad = 4
-	WHERE nombre = 'Sanford';
+	WHERE codalumno = 27;
 
 UPDATE alumnos
 	SET nacionalidad = 4
-	WHERE nombre = 'Ibrahim';
+	WHERE codalumno = 28;
 
 UPDATE alumnos
 	SET nacionalidad = 4
-	WHERE nombre = 'Riva';
+	WHERE codalumno = 30;
 
 UPDATE alumnos
 	SET nacionalidad = 5
-	WHERE nombre = 'Harris';
-
-UPDATE alumnos
-	SET nacionalidad = 5
-	WHERE nombre = 'Harris';
-
-UPDATE alumnos
-	SET nacionalidad = 5
-	WHERE nombre = 'Harris';
+	WHERE codalumno = 33;
 
 SELECT * FROM alumnos;
