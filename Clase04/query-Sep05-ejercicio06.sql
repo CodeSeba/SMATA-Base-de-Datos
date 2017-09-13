@@ -1,4 +1,4 @@
--- Agregar a Alumnos el campo Nacionalidad.
+-- Porcentaje de extranjeros en Redes.
 
 USE centroz;
 
