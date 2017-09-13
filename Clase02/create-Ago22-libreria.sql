@@ -28,3 +28,5 @@ INSERT INTO libros VALUES
 	(null, 'Dias de Perros', 'David Safier', 'Humor', 'Planeta', 'Tercera', 7, 119.99),
 	(null, 'Farenheid 451', 'Bradbury', 'Ciencia Ficcion', 'Emece', 'Octava', 12, 120),
 	(null, 'El Aleph', 'Borges', 'Novela', 'Planeta', 'Segunda', 5, 229.99);
+
+SELECT * FROM libros;

@@ -4,7 +4,7 @@ USE cine;
 
 CREATE TABLE salas
 	(
-		codigo int AUTO_INCREMENT,
+		codigo int,
 		nombre varchar(100),
 		pelicula int,
 		PRIMARY KEY (codigo)
@@ -14,7 +14,7 @@ CREATE TABLE peliculas
 	(
 		codigo int AUTO_INCREMENT,
 		nombre varchar(100),
-		calificacion int,			-- Calificaicon por Edad
+		calificacion int,			-- Calificacion por Edad
 		PRIMARY KEY (codigo)
 	);
 
@@ -25,12 +25,13 @@ CREATE TABLE calificaciones
 		PRIMARY KEY (codigo)
 	);
 
-INSERT INTO salas(nombre,pelicula) VALUES
-	('Sarmiento',NULL),
-	('Bolivar',3),
-	('Evita',2),
-	('Pueyrredon',NULL),
-	('Viamonte',8);
+INSERT INTO salas(codigo,nombre,pelicula) VALUES
+	(1,'Sarmiento',null),
+	(2,'Bolivar',3),
+	(3,'Evita',2),
+	(4,'Pueyrredon',null),
+	(5,'Viamonte',8),
+	(6,'Salguero',1);
 
 INSERT INTO calificaciones(codigo,nombre) VALUES
 	(1,'ATP'),
@@ -40,23 +41,23 @@ INSERT INTO calificaciones(codigo,nombre) VALUES
 
 INSERT INTO peliculas(nombre,calificacion) VALUES
 	('Avatar',1),
-	('Lawrence of Arabia',NULL),
-	('Donnie Darko',NULL),
-	('Aliens',4),
-	('Vertigo',NULL),
-	('The Innocents',NULL),
-	('Slumdog Millionaire',NULL),
-	('Annie Hall',NULL),
-	('Good Will Hunting',NULL),
-	('American Beauty',4),
+	('Lawrence de Arabia',null),
+	('Donnie Darko',null),
+	('Alien',4),
+	('Vertigo',null),
+	('Posesión Satánica',null),
+	('¿Quién Quiere Ser Millonario?',null),
+	('Dos Extraños Amantes',null),
+	('En Busca Del Destino',null),
+	('Belleza Americana',4),
 	('Titanic',3),
-	('Beyond the Sea',NULL),
-	('Trainspotting',3),
-	('Princess Mononoke',1),
-	('The Usual Suspects',NULL),
-	('Blade Runner',NULL),
-	('Braveheart',2),
-	('Chinatown',4);
+	('Frente al Mar',null),
+	('El Transportador',3),
+	('La Princesa Mononoke',1),
+	('Los Sospechosos de Simpre',null),
+	('Blade Runner',null),
+	('Corazón Valiente',2),
+	('El Barrio Chino',4);
 
 SELECT * FROM salas;
 

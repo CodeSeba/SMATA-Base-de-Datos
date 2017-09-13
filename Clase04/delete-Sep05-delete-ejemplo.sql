@@ -4,3 +4,5 @@ USE empleados;
 
 DELETE FROM empleado
 	WHERE seccion = 2;
+
+SELECT * FROM empleado;

@@ -5,3 +5,5 @@ USE empleados;
 
 UPDATE seccion
 	SET presupuesto = presupuesto * 0.9;
+
+SELECT * FROM seccion;
