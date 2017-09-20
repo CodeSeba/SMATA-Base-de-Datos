@@ -1,0 +1,1 @@
+-- Borrar todos los directores que tienen jefes.
