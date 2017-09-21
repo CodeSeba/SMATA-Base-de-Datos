@@ -3,10 +3,11 @@
 
 USE direccion;
 
-SELECT de.codigo AS DespachoSaturado
-	FROM despacho de INNER JOIN
-		(SELECT de.codigo AS Despacho,COUNT(*) AS CantidadDirectores
-			FROM directores di INNER JOIN despacho de
-			ON di.despacho = de.codigo
-			GROUP BY Despacho) a
-	ON de.capacidad < a.CantidadDirectores;
+SELECT d.codigo AS 'Despacho Sobreutilizado'
+	FROM despacho d,
+		(
+			SELECT despacho,count(despacho) AS CantidadPorDespacho
+				FROM directores
+				GROUP BY despacho
+		) aux
+	WHERE aux.despacho = d.codigo AND aux.CantidadPorDespacho > d.capacidad;
