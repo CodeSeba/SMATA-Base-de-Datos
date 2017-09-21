@@ -24,3 +24,13 @@ CREATE TABLE proveedor
 		PRIMARY KEY (codproveedor)
 	);
 
+INSERT INTO piezas(nombre) VALUES
+	("Tornillo"),("Tuerca"),("Valvula"),("Piston"),("Freno"),
+	("Orrin"),("Volante"),("Rueda"),("Tubo"),("Termostato"),
+	("Arandela"),("Tarugo"),("Transmision"),("Regulador"),("Filtro"),
+	("Sensor"),("ECU"),("Injectores"),("Cables"),("Cooler"),
+	("Radiador"),("Sombralanda"),("Escape"),("Carburador"),("Bujia");
+
+INSERT INTO proveedor(codproveedor,nombre) VALUES
+	("A1B2","Jose"),("C3D4","Pablo"),("E5F6","Esteban"),("G7H8","Tomas"),("I9J0","Carlos"),
+	("K1L2","Camila"),("M3N4","Belen"),("O5P6","Ana"),("Q7R8","Maria"),("S9T0","Julia");
