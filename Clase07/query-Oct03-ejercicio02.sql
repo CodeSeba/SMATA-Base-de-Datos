@@ -6,4 +6,4 @@ USE ciencia;
 SELECT c.DNI, c.Nombre, c.Apellido, COUNT(p.nombre) AS "Cantidad de Proyectos"
 	FROM cientifico c, proyecto p, asignado a
 	WHERE a.proyecto = p.id AND a.cientifico = c.dni
-	GROUP BY c.Nombre;
+	GROUP BY c.DNI;

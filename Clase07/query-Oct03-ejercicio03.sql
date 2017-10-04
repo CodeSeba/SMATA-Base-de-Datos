@@ -3,7 +3,7 @@
 
 USE ciencia;
 
-SELECT p.Nombre AS "Nombre de Proyecto", COUNT(p.nombre) AS "Cantidad de Cientificos"
+SELECT p.Nombre AS Proyecto, COUNT(c.nombre) AS "Cantidad de Cientificos"
 	FROM cientifico c, proyecto p, asignado a
 	WHERE a.proyecto = p.id AND a.cientifico = c.dni
 	GROUP BY p.Nombre;
