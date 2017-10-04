@@ -102,5 +102,3 @@ INSERT INTO asignado(cientifico,proyecto) VALUES
 SELECT * FROM cientifico;
 SELECT * FROM proyecto;
 SELECT * FROM asignado;
-
-DROP DATABASE ciencia;
