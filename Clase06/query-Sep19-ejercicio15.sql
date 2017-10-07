@@ -4,6 +4,6 @@
 
 USE construye;
 
-SELECT p.nombre AS 'Pieza mas cara',max(s.precio) AS Precio
+SELECT p.nombre AS 'Pieza mas cara', format(max(s.precio),2,"es_AR") AS Precio
 	FROM pieza p,suministra s
 	WHERE s.idPieza = p.codigo;

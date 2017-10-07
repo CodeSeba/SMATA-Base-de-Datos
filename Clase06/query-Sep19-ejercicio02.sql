@@ -3,5 +3,4 @@
 
 USE direccion;
 
-SELECT * FROM directores
-	WHERE dnijefe IS null;
+SELECT * FROM directores WHERE dnijefe IS null;

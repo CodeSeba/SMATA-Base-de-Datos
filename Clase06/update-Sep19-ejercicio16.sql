@@ -2,9 +2,9 @@
 
 USE construye;
 
-SELECT precio AS 'Precio viejo' FROM suministra;
+SELECT format(precio,2,"es_AR") AS 'Precio viejo' FROM suministra;
 
 UPDATE suministra
 	SET precio = precio + 10;
 
-SELECT precio AS 'Precio nuevo' FROM suministra;
+SELECT format(precio,2,"es_AR") AS 'Precio nuevo' FROM suministra;
