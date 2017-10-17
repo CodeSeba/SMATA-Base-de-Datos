@@ -1,6 +1,6 @@
 -- Repaso de las clases anteriores
 
-USE ellos;
+USE martes17;
 
 SELECT *
 FROM personas;

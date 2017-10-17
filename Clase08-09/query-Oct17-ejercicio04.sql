@@ -1,9 +1,6 @@
--- Repaso de las clases anteriores
+# Repaso de las clases anteriores
 
-USE ellos;
-
-INSERT INTO personas VALUES
-	("Juan","Calle4",27);
+USE martes17;
 
 SELECT *
 FROM personas
