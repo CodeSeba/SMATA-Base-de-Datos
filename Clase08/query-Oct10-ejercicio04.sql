@@ -1,4 +1,4 @@
-# Repaso de las clases anteriores
+-- Repaso de las clases anteriores
 
 USE martes17;
 
