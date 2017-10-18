@@ -48,6 +48,7 @@ INSERT INTO xp VALUES
 
 SELECT * FROM empleado;
 
-SELECT e.nombre AS Empleado, h.nombre AS Habilidad, xp.Nivel
+SELECT e.nombre Empleado, h.nombre Habilidad, xp.Nivel
 FROM empleado e, habilidad h, xp
-WHERE e.id = xp.empleado AND h.id = xp.habilidad;
+WHERE e.id = xp.empleado
+AND h.id = xp.habilidad;

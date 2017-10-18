@@ -5,16 +5,6 @@
 -- 2. Despues de crear el diagrama, crear la base de datos y
 --    las tablas correspondientes.
 
--- Mostrar:
-
--- 5. Los nombres de todos los empleados con conocimientos en "PS",
---    ordendado del mas experto al menos experto.
--- 6. Las habilidades de Adrian ordenadas en aquellas que es mas
---    habilidoso al menos habilidoso.  Si coinciden el puntaje de habilidades,
---    ordenar alfabeticamente.
--- 7. Los nombres de los empleados con conoc en "PHP" e "ingles", ordenados
---    de mayor a menor el nivel de "ingles".  En aquellos que coinciden,
---    se ordena por nivel de "PHP" de mayor a menor.
 
 CREATE DATABASE empresa;
 
@@ -68,36 +58,37 @@ INSERT INTO habilidad (nombre) VALUES
 	("Electronica");
 
 INSERT INTO xp VALUES
-	(5,1,2),
-	(4,1,2),
-	(3,13,2),
-	(2,15,3),
-	(5,5,5),
-	(4,3,3),
-	(1,15,5),
-	(3,12,2),
-	(1,9,4),
-	(3,13,1),
-	(5,14,5),
-	(6,9,3),
-	(2,9,2),
-	(3,11,1),
-	(2,13,5),
-	(3,3,4),
-	(1,6,3),
-	(4,5,5),
-	(6,14,1),
 	(1,3,2),
-	(3,15,5),
-	(4,8,5),
-	(1,6,4),
-	(3,5,2),
+	(1,6,3),
+	(1,4,4),
+	(1,9,4),
+	(1,15,5),
 	(2,2,5),
-	(5,14,2),
-	(6,14,1),
+	(2,9,2),
+	(2,13,5),
+	(2,15,3),
+	(3,3,4),
+	(3,5,2),
+	(3,9,3),
+	(3,11,1),
+	(3,12,2),
+	(3,13,2),
+	(3,4,1),
+	(3,15,5),
+	(4,1,2),
 	(4,2,1),
+	(4,3,3),
+	(4,5,5),
 	(4,6,2),
-	(3,9,3);
+	(4,8,4),
+	(5,1,2),
+	(5,5,5),
+	(5,14,5),
+	(5,4,2),
+	(6,9,3),
+	(6,4,1),
+	(6,14,1),
+	(6,8,3);
 
 SELECT * FROM empleado;
 
