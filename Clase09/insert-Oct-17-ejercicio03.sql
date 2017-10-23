@@ -7,6 +7,7 @@
 -- Referencias:
 -- ingles = habilidad.id = 1
 -- frances = habilidad.id = 2
+-- PS = Photoshop = habilidad.id = 8
 -- PHP = habilidad.id = 6
 -- JS = Javascript = habilidad.id = 7
 -- ME = Montaje de Equipos = 9
