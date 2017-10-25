@@ -2,7 +2,8 @@
 
 USE almacen;
 
-SELECT m.piso Piso, COUNT(v.maquina) Ventas
-FROM maquinaRegistradora m, venta v
+SELECT m.piso Piso, COUNT(v.producto) "Cantidad Ventas", ROUND(SUM(p.precio),2) "Total Ventas"
+FROM maquinaRegistradora m, producto p, venta v
 WHERE m.codigo = v.maquina
-GROUP BY v.maquina;
+AND p.codigo = v.producto
+GROUP BY m.piso;

@@ -4,13 +4,13 @@
 
 USE almacen;
 
-SELECT ctotal.codigo Codigo, ctotal.nomApe Empleado, m.piso Piso, ctotal.total "Total Ventas"
+SELECT suma.codigo Codigo, suma.nomApe Cajero, m.piso Piso, suma.total "Total Ventas"
 FROM maquinaRegistradora m, venta v,
 	(SELECT c.codigo, c.nomApe, ROUND(SUM(p.precio),2) total
 	FROM cajero c, producto p, venta v
 	WHERE v.cajero = c.codigo
 	AND v.producto = p.codigo
-	GROUP BY c.codigo) ctotal
-WHERE v.cajero = ctotal.codigo
+	GROUP BY c.codigo) suma
+WHERE v.cajero = suma.codigo
 AND v.maquina = m.codigo
-AND ctotal.total < 1500;
+AND suma.total < 1500;

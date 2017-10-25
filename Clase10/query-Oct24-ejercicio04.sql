@@ -3,8 +3,8 @@
 
 USE almacen;
 
-SELECT c.codigo Codigo, c.nomApe Empleado, ROUND(SUM(p.precio),2) "Total Ventas"
+SELECT c.codigo Codigo, c.nomApe Cajero, ROUND(SUM(p.precio),2) "Total Ventas"
 FROM cajero c, producto p, venta v
-WHERE c.codigo = v.cajero
-AND p.codigo = v.producto
+WHERE v.cajero = c.codigo
+AND v.producto = p.codigo
 GROUP BY c.codigo;
