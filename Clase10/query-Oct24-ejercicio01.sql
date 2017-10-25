@@ -6,5 +6,5 @@ USE almacen;
 SELECT p.nombre Producto, COUNT(v.producto) Ventas
 FROM producto p, venta v
 WHERE p.codigo = v.producto
-GROUP BY v.producto
+GROUP BY p.nombre
 ORDER BY p.nombre DESC;

@@ -1,9 +1,6 @@
--- 2. Obtener un informe completo de
---    ventas, nombre del cajero que
---    hizo la venta, nombre y precio
---    del producto vendido y piso
---    donde se encuentra la maquina
---    reg. donde se hizo la venta.
+-- 2. Obtener un informe completo de ventas, nombre del cajero que
+--    hizo la venta, nombre y precio del producto vendido y piso
+--    donde se encuentra la maquina reg. donde se hizo la venta.
 
 USE almacen;
 

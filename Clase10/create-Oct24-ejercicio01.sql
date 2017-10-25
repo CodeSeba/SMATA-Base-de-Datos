@@ -1,4 +1,4 @@
--- Crear la base de datos "Almacenes".
+-- Crear la base de datos "Almacen".
 
 CREATE DATABASE almacen;
 
