@@ -1,6 +1,6 @@
 USE pizzeria;
 
-SELECT pf.fecha Fecha, SUM(Fecha) "Ingresos Totales"
+SELECT pf.fecha Fecha, SUM(f.total) "Ingresos Totales"
 FROM factura f,
 	(SELECT id, DATE(recibido) fecha FROM pedido) pf
 WHERE f.pedido = pf.id
