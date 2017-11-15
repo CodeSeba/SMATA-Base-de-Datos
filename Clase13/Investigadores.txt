@@ -1,0 +1,15 @@
+Investigadores
+1. Obtener el dni de aquellos investigadores que
+   reservaron mas de un equipo.
+2. Obtener un listado completo de reservas incluyendo
+   los siguientes datos:
+   -Dni y nombre del investigador junto con el nombre de su facultad
+   -Nro de serie y nombre del equipo reservado
+    junto al nombre de la facultad al cual pertence.
+   -Fecha de comienzo y fin de la reserva.
+3. Obtener el dni y nombre del investigador que reservaron equipos
+   que son de otras facutades.
+4. Los nombres de aquellas facultades en las que no hay reservas.
+5. Obtener los nombres de las facultades donde no hayan realizado
+   ninguna reserva.
+6. Nro de serie y nombre de los equipos que nunca fueron reservados.
