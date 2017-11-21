@@ -10,6 +10,6 @@ Investigadores
 3. Obtener el dni y nombre del investigador que reservaron equipos
    que son de otras facutades.
 4. Los nombres de aquellas facultades en las que no hay reservas.
-5. Obtener los nombres de las facultades donde no hayan realizado
-   ninguna reserva.
+5. Obtener los nombres de las facultades de los investigadores
+   donde no hayan realizado ninguna reserva.
 6. Nro de serie y nombre de los equipos que nunca fueron reservados.

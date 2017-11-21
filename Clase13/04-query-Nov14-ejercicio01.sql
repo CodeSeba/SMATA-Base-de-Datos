@@ -1,15 +1,12 @@
--- 3.
+-- 4.
 
 USE investigadores;
 
 SELECT
-	i.nombre Investigador,
-	i.dni DNI,
-	fi.nombre "Facultad del Investigador",
-	fe.nombre "Facultad del Equipo"
-FROM facultad fi, facultad fe, investigador i, equipo e, reserva r
-WHERE r.investigador = i.dni
-AND r.equipo = e.nroserie
-AND fi.cod = i.facultad
-AND fe.cod = e.facultad
-AND fi.cod != fe.cod;
+	f.nombre
+FROM facultad f, investigador i,
+	(SELECT investigador dni
+	FROM reserva
+	GROUP BY investigador) rg
+WHERE rg.dni = i.dni
+AND f.cod != i.facultad;
