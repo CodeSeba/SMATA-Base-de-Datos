@@ -2,11 +2,21 @@
 
 USE investigadores;
 
-SELECT
-	f.nombre
-FROM facultad f, investigador i,
-	(SELECT investigador dni
-	FROM reserva
-	GROUP BY investigador) rg
-WHERE rg.dni = i.dni
-AND f.cod != i.facultad;
+SELECT f.nombre
+FROM facultad f,
+	(SELECT f.cod
+	FROM reserva r, equipo e, facultad f
+	WHERE r.equipo = e.nroserie
+	AND e.facultad = f.cod
+	GROUP BY f.cod) freserva
+WHERE freserva.cod != f.cod;
+
+SELECT f.nombre
+FROM facultad f
+INNER JOIN
+	(SELECT f.cod
+	FROM reserva r, equipo e, facultad f
+	WHERE r.equipo = e.nroserie
+	AND e.facultad = f.cod
+	GROUP BY f.cod) freserva
+ON freserva.cod != f.cod;

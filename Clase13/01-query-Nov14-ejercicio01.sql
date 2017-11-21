@@ -2,10 +2,7 @@
 
 USE investigadores;
 
-SELECT cant.investigador "Investigador (DNI)", cant.equipos "Cantidad de Equipos Reservados"
-FROM
-	(SELECT investigador, COUNT(equipo) equipos
-	FROM reserva
-	GROUP BY investigador) cant
-WHERE cant.equipos > 1
+SELECT COUNT(r.equipo) "Cantidad de Reservas", i.dni "investigador"
+FROM investigador i, reserva r
+WHERE i. > 1
 GROUP by cant.investigador;
