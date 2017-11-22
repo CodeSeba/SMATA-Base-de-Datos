@@ -1,4 +1,5 @@
--- 3.
+-- 3. Obtener el dni y nombre del investigador que reservaron equipos
+--    que son de otras facutades.
 
 USE investigadores;
 

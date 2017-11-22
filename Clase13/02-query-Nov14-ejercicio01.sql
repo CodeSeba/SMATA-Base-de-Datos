@@ -1,4 +1,9 @@
--- 2.
+-- 2. Obtener un listado completo de reservas incluyendo
+--    los siguientes datos:
+--    -Dni y nombre del investigador junto con el nombre de su facultad
+--    -Nro de serie y nombre del equipo reservado
+--     junto al nombre de la facultad al cual pertence.
+--    -Fecha de comienzo y fin de la reserva.
 
 USE investigadores;
 

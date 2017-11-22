@@ -1,22 +1,11 @@
--- 4.
+-- 4. Los nombres de aquellas facultades en las que no hay reservas.
 
 USE investigadores;
 
-SELECT f.nombre
-FROM facultad f,
-	(SELECT f.cod
-	FROM reserva r, equipo e, facultad f
-	WHERE r.equipo = e.nroserie
-	AND e.facultad = f.cod
-	GROUP BY f.cod) freserva
-WHERE freserva.cod != f.cod;
-
-SELECT f.nombre
+SELECT f.nombre "Facultades con equipos sin reservas"
 FROM facultad f
-INNER JOIN
+WHERE NOT EXISTS
 	(SELECT f.cod
-	FROM reserva r, equipo e, facultad f
+	FROM reserva r, equipo e
 	WHERE r.equipo = e.nroserie
-	AND e.facultad = f.cod
-	GROUP BY f.cod) freserva
-ON freserva.cod != f.cod;
+	AND e.facultad = f.cod);
