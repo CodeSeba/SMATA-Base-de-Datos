@@ -1,0 +1,64 @@
+1. Obtener los datos completos de los empleados.
+2. Obtener los datos completos de los departamentos.
+3. Obtener los datos de los empleados con cargo ‘Secretaria’.
+4. Obtener el nombre y salario de los empleados.
+5. Obtener los datos de los empleados vendedores, ordenado por nombre.
+6. Listar el nombre de los departamentos.
+7. Obtener el nombre y cargo de todos los empleados, ordenado por salario.
+8. Listar los salarios y comisiones de los empleados del departamento 2000, ordenado por comisión.
+9. Listar todas las comisiones.
+10. Obtener el valor total a pagar que resulta de sumar a los empleados del departamento 3000 una bonificación de 500.000, en orden alfabético del empleado
+11. Obtener la lista de los empleados que ganan una comisión superior a su sueldo.
+
+12. Listar los empleados cuya comisión es menor o igual que el 30% de su sueldo.
+
+13.Elabore un listado donde para cada fila, figure ‘Nombre’ y ‘Cargo’ antes del valor respectivo para cada empleado.
+
+14. Hallar el salario y la comisión de aquellos empleados cuyo número de documento de identidad es superior al ‘19.709.802’.
+
+15. Muestra los empleados cuyo nombre empiece entre las letras J y Z (rango).
+Liste estos empleados y su cargo por orden alfabético.
+
+16. Listar el salario, la comisión, el salario total (salario + comisión), documento de identidad del empleado y nombre, de aquellos empleados que tienen comisión superior a 1.000.000, ordenar el informe por el número del documento de identidad
+
+17. Obtener un listado similar al anterior, pero de aquellos empleados que NO tienen comisión
+
+18. Hallar los empleados cuyo nombre no contiene la cadena “MA”
+
+19. Obtener los nombres de los departamentos que no sean “Ventas” ni “Investigación” NI
+
+‘MANTENIMIENTO’.
+
+20. Obtener el nombre y el departamento de los empleados con cargo ‘Secretaria’ o ‘Vendedor’, que no trabajan en el departamento de “PRODUCCION”, cuyo salario es superior a $1.000.000,
+
+ordenados por fecha de incorporación.
+
+21. Obtener información de los empleados cuyo nombre tiene exactamente 11 caracteres
+
+22. Obtener información de los empleados cuyo nombre tiene al menos 11 caracteres
+
+23. Listar los datos de los empleados cuyo nombre inicia por la letra ‘M’, su salario es mayor a $800.000 o reciben comisión y trabajan para el departamento de ‘VENTAS’
+
+24. Obtener los nombres, salarios y comisiones de los empleados que reciben un salario situado entre la mitad de la comisión la propia comisión.
+
+25. Mostrar el salario más alto de la empresa.
+
+26. Mostrar cada una de las comisiones y el número de empleados que las reciben. Solo si tiene comisión.
+
+27. Mostrar el nombre del último empleado de la lista por orden alfabético.
+
+28. Hallar el salario más alto, el más bajo y la diferencia entre ellos.
+
+29. Mostrar el número de empleados de sexo femenino y de sexo masculino, por departamento.
+
+30. Hallar el salario promedio por departamento.
+
+31. Mostrar la lista de los empleados cuyo salario es mayor o igual que el promedio de la empresa. Ordenarlo por departamento.
+
+32. Hallar los departamentos que tienen más de tres empleados. Mostrar el número de empleados de esos departamentos.
+
+33. Mostrar el código y nombre de cada jefe, junto al número de empleados que dirige. Solo los que tengan mas de dos empleados (2 incluido).
+
+34. Hallar los departamentos que no tienen empleados
+
+35. Mostrar el nombre del departamento cuya suma de salarios sea la más alta, indicando el valor de la suma.
