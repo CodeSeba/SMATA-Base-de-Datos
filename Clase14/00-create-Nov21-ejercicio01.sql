@@ -19,11 +19,18 @@ CREATE TABLE empleado
 
 CREATE TABLE departamento
 	(
-		codigo VARCHAR(4),
+		codigo VARCHAR(4) AUTO_INCREMENT,
 		nombre VARCHAR(20),
 		ciudad VARCHAR(15),
 		director VARCHAR(12),
 		PRIMARY KEY (codigo)
 	);
+
+INSERT INTO empleado VALUES
+	
+INSERT INTO departamento(nombre,ciudad) VALUES
+	("Central","CABA"), ("Cordobesa","Cordoba"),
+	("Luisiana","San Luis"), ("La Humeda","La Pampa"),
+	("Jacare","Corrientes");
 
 DROP DATABASE empresa02;
